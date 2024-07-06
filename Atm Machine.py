@@ -30,7 +30,7 @@ def Atm():
             withdraw_amount=float(input("\nEnter amount to withdraw: Ksh"))
             if 0 < withdraw_amount<=Balance:
                 Balance=Balance-withdraw_amount
-                print(f"\nYou have successfully withdrwan ${withdraw_amount:.1f}") 
+                print(f"\nYou have successfully withdrwan ${withdraw_amount:.2f}") 
                 print(f"Your new balance is:Ksh{Balance:.2f}")
             else:
                 print("\nInvalid withdrawal amount.Please try again")
