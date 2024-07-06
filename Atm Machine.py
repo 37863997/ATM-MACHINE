@@ -5,7 +5,7 @@ Balance= 1000.0
 
 def Atm():
     print("Welcome to the Atm Machine")
-    while true:
+    while True:
         print("\nPlease choose an option:")
         print("1.Check balance")
         print("2.Deposit Money")
@@ -14,24 +14,24 @@ def Atm():
  # Enter your choice whether to withdraw,check balance or Deposit
         Option=int(input("\nEnter your Option:"))
         if Option ==1:
-            print(f"\nYour current balance is: ${Balance:.1f}")
+            print(f"\nYour current balance is: Ksh{Balance:.2f}")
 # Deposit amount option
         elif Option ==2:
-            deposit_amount=float(input("\nEnter amount to deposit: $"))
+            deposit_amount=float(input("\nEnter amount to deposit: Ksh"))
             if deposit_amount>0:
-                Balance
+                
                 Balance=Balance+deposit_amount
-                print(f"\nYou have successfully Deposited ${deposit_amount:.1f}")
-                print(f"Your new Balance is:${Balance:.1f}")
+                print(f"\nYou have successfully Deposited Ksh{deposit_amount:.2f}")
+                print(f"Your new Balance is:Ksh{Balance:.2f}")
             else:
                 print("\nInvalid deposit_amount .Please try again.")
 # Withdrawal amount option
         elif Option ==3:
-            withdraw_amount=float(input("\nEnter amount to withdraw: $"))
+            withdraw_amount=float(input("\nEnter amount to withdraw: Ksh"))
             if 0 < withdraw_amount<=Balance:
                 Balance=Balance-withdraw_amount
                 print(f"\nYou have successfully withdrwan ${withdraw_amount:.1f}") 
-                print(f"Your new balance is:${Balance:.1f}")
+                print(f"Your new balance is:Ksh{Balance:.2f}")
             else:
                 print("\nInvalid withdrawal amount.Please try again")
         elif Option == 4:
